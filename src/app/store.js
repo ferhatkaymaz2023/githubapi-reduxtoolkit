@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import githubReducer from "../features/github/githubSlice";
+
+
 
 export default configureStore({
   reducer: {
-    counter: counterReducer,
+    github:githubReducer
   },
 });
